@@ -1,3 +1,5 @@
+" :PlugInstall
+" https://github.com/junegunn/vim-plug
 call plug#begin('~/.config/nvim/plugged')
 
 " File and folder management
@@ -30,11 +32,16 @@ Plug 'vim-airline/vim-airline'
 
 " Theme
 Plug 'phanviet/vim-monokai-pro'
+
+" Icons
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 set termguicolors
 colorscheme monokai_pro
 
+set encoding=UTF-8
 set noerrorbells                                              " Don't add sounds for errors
 set number
 set nowrap
@@ -141,3 +148,5 @@ let g:NERDTreeGitStatusWithFlags = 1
 au BufNewFile,BufRead *.ts setlocal filetype=typescript
 au BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
 " == AUTOCMD END ================================
+
+inoremap jj <esc>
