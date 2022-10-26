@@ -1,152 +1,150 @@
-" :PlugInstall
-" https://github.com/junegunn/vim-plug
-call plug#begin('~/.config/nvim/plugged')
+" Fundamentals "{{{
+" ---------------------------------------------------------------------
 
-" File and folder management
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'preservim/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" init autocmd
+autocmd!
+" set script encoding
+scriptencoding utf-8
+" stop loading config if it's on tiny or small
+if !1 | finish | endif
 
-" Snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'natebosch/dartlang-snippets'
-
-" Language support
-Plug 'tpope/vim-projectionist'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'jiangmiao/auto-pairs'
-
-" Dart
-Plug 'dart-lang/dart-vim-plugin'
-
-" Typescript
-Plug 'ianks/vim-tsx'
-Plug 'leafgarland/typescript-vim'
-
-" Git
-Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-
-" Theme
-Plug 'phanviet/vim-monokai-pro'
-
-" Icons
-Plug 'ryanoasis/vim-devicons'
-
-call plug#end()
-
-set termguicolors
-colorscheme monokai_pro
-
-set encoding=UTF-8
-set noerrorbells                                              " Don't add sounds for errors
+set nocompatible
 set number
-set nowrap
-set nohlsearch
-set smartcase
-set noswapfile
+syntax enable
+set fileencodings=utf-8,sjis,euc-jp,latin
+set encoding=utf-8
+set title
+set autoindent
+set background=dark
 set nobackup
-set undodir=~/.config/nvim-data/backup
-set undofile
-set incsearch
-set tabstop=2
-set softtabstop=0 noexpandtab
-set shiftwidth=2
-set colorcolumn=120
-set clipboard=unnamedplus
-set backspace=indent,eol,start
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+set hlsearch
+set showcmd
+set cmdheight=1
+set laststatus=2
+set scrolloff=10
+set expandtab
+"let loaded_matchparen = 1
+set shell=fish
+set backupskip=/tmp/*,/private/tmp/*
 
-let mapleader=" "
-nnoremap <leader>fe :CocCommand flutter.emulators <CR>
-nnoremap <leader>fd :below new output:///flutter-dev <CR>
-map <leader>h :wincmd h <CR>
-map <leader>j :wincmd j <CR>
-map <leader>k :wincmd k <CR>
-map <leader>l :wincmd l <CR>
-
-nnoremap <C-b> :NERDTreeToggle<CR>
-" nnoremap <C-S-b> :NERDTreeFind<CR>
-
-let g:dart_format_on_save = 1
-let g:dartfmt_options = ['--fix', '--line-length 120']
-
-" Coc
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
-" Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
-
-" Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  elseif (coc#rpc#ready())
-    call CocActionAsync('doHover')
-  else
-    execute '!' . &keywordprg . " " . expand('<cword>')
-  endif
-endfunction
-
-nmap <C-P> :FZF<CR>
-
-nmap <leader>gs :G<CR>
-nmap <leader>gh :diffget //2<CR>
-nmap <leader>gl :diffget //3<CR>
-
-imap <tab> <Plug>(coc-snippets-expand)
-let g:UltiSnipsExpandTrigger = '<Nop>'
-let g:coc_snippet_next = '<TAB>'
-let g:coc_snippet_prev = '<S-TAB>'
-
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" Use <c-space> to trigger completion.
+" incremental substitution (neovim)
 if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
+  set inccommand=split
 endif
 
-" Applying codeAction to the selected region.
-" Example: `<leader>aap` for current paragraph
-xmap <leader>a <Plug>(coc-codeaction-selected)
-nmap <leader>a <Plug>(coc-codeaction-selected)
+" Suppress appending <PasteStart> and <PasteEnd> when pasting
+set t_BE=
 
-"coc config
-let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-tsserver',
-  \ 'coc-eslint',
-  \ 'coc-prettier',
-  \ 'coc-json',
-  \ 'coc-flutter',
-  \ 'coc-snippets',
-  \ 'coc-yaml',
-  \ 'coc-tslint-plugin',
-  \ 'coc-tsserver',
-  \ 'coc-emmet',
-  \ 'coc-css',
-  \ 'coc-html',
-  \ 'coc-json',
-  \ ]
+set nosc noru nosm
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
+"set showmatch
+" How many tenths of a second to blink when matching brackets
+"set mat=2
+" Ignore case when searching
+set ignorecase
+" Be smart when using tabs ;)
+set smarttab
+" indents
+filetype plugin indent on
+filetype indent on
+set shiftwidth=2
+set tabstop=2
+set ai "Auto indent
+set si "Smart indent
+set nowrap "No Wrap lines
+set backspace=start,eol,indent
+" Finding files - Search down into subfolders
+set path+=**
+set wildignore+=*/node_modules/*
 
-let g:NERDTreeGitStatusWithFlags = 1
+" Turn off paste mode when leaving insert
+autocmd InsertLeave * set nopaste
 
-" == AUTOCMD ================================
-" by default .ts file are not identified as typescript and .tsx files are not
-" identified as typescript react file, so add following
-au BufNewFile,BufRead *.ts setlocal filetype=typescript
-au BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
-" == AUTOCMD END ================================
+" Add asterisks in block comments
+set formatoptions+=r
 
-inoremap jj <esc>
+
+"}}}
+"
+
+
+" Highlights "{{{
+" ---------------------------------------------------------------------
+set cursorline
+"set cursorcolumn
+
+" Set cursor line color on visual mode
+highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
+
+highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
+
+augroup BgHighlight
+  autocmd!
+  autocmd WinEnter * set cul
+  autocmd WinLeave * set nocul
+augroup END
+
+if &term =~ "screen"
+  autocmd BufEnter * if bufname("") !~ "^?[A-Za-z0-9?]*://" | silent! exe '!echo -n "\ek[`hostname`:`basename $PWD`/`basename %`]\e\\"' | endif
+  autocmd VimLeave * silent!  exe '!echo -n "\ek[`hostname`:`basename $PWD`]\e\\"'
+endif
+
+"}}}
+
+
+" File types "{{{
+" ---------------------------------------------------------------------
+" JavaScript
+au BufNewFile,BufRead *.es6 setf javascript
+" TypeScript
+au BufNewFile,BufRead *.tsx setf typescriptreact
+" Markdown
+au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,BufRead *.mdx set filetype=markdown
+" Flow
+au BufNewFile,BufRead *.flow set filetype=javascript
+" Fish
+au BufNewFile,BufRead *.fish set filetype=fish
+
+set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
+
+autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+
+"}}}
+
+
+" Imports "{{{
+" ---------------------------------------------------------------------
+runtime ./plug.vim
+runtime ./maps.vim
+"}}}
+
+
+" Syntax theme "{{{
+" ---------------------------------------------------------------------
+
+" true color
+if exists("&termguicolors") && exists("&winblend")
+  syntax enable
+  set termguicolors
+  set winblend=0
+  set wildoptions=pum
+  set pumblend=5
+  set background=dark
+  " Use NeoSolarized
+  let g:neosolarized_termtrans=1
+  runtime ./colors/NeoSolarized.vim
+  colorscheme monokai_pro
+endif
+
+"}}}
+
+" Extras "{{{
+" ---------------------------------------------------------------------
+set exrc
+"}}}
+
+" vim: set foldmethod=marker foldlevel=0:
