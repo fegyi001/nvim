@@ -18,6 +18,8 @@ if has("nvim")
   Plug 'preservim/nerdtree'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'ThePrimeagen/harpoon'
 
   " Snippets
   Plug 'natebosch/dartlang-snippets'

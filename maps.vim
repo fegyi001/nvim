@@ -70,3 +70,6 @@ nnoremap <silent> ;w :w<CR>
 nnoremap <silent>df :DartFmt<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
 inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"
+nnoremap <silent> <leader>f :FZF<cr>
+nnoremap <silent> <leader>F :FZF ~<cr>
+nnoremap <silent> <leader>g :lua require("harpoon.ui").toggle_quick_menu()<cr>
