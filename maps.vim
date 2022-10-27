@@ -68,4 +68,5 @@ nnoremap <silent> ;wq :wq<CR>
 nnoremap <silent> ;w :w<CR>
 
 nnoremap <silent>df :DartFmt<CR>
-inoremap jj <esc>
+nnoremap <C-b> :NERDTreeToggle<CR>
+inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"

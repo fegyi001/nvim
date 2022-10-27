@@ -147,4 +147,9 @@ endif
 set exrc
 "}}}
 
+
+hi Visual cterm=NONE ctermbg=0 ctermfg=NONE guibg=Grey40 
+set relativenumber
+nmap <F6> :NERDTreeToggle<CR>
 " vim: set foldmethod=marker foldlevel=0:
+set guifont=DroidSansMono_Nerd_Font:h11
