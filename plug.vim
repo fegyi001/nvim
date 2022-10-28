@@ -8,7 +8,10 @@ if has("nvim")
   Plug 'kristijanhusak/defx-git'
   Plug 'kristijanhusak/defx-icons'
   Plug 'hoob3rt/lualine.nvim'
+  Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-tree/nvim-web-devicons'
+  Plug 'nvim-treesitter/nvim-treesitter' 
   Plug 'phanviet/vim-monokai-pro'
   Plug 'ThePrimeagen/vim-be-good'
   Plug '/usr/local/opt/fzf'
@@ -18,7 +21,6 @@ if has("nvim")
   Plug 'preservim/nerdtree'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'ryanoasis/vim-devicons'
-  Plug 'nvim-lua/plenary.nvim'
   Plug 'ThePrimeagen/harpoon'
 
   " Snippets
