@@ -72,11 +72,3 @@ nnoremap <C-b> :NERDTreeToggle<CR>
 inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"
 nnoremap <silent> <leader>f :FZF<cr>
 nnoremap <silent> <leader>F :FZF ~<cr>
-nnoremap <silent> <leader>g :lua require("harpoon.ui").toggle_quick_menu()<cr>
-"nnoremap <silent> <C-e> :lua require("harpoon.mark").add_file()<cr>
-"nnoremap("<C-e>", function() require("harpoon.ui").toggle_quick_menu() end, silent)
-
-"nnoremap("<C-h>", function() require("harpoon.ui").nav_file(1) end, silent)
-"nnoremap("<C-t>", function() require("harpoon.ui").nav_file(2) end, silent)
-"nnoremap("<C-n>", function() require("harpoon.ui").nav_file(3) end, silent)
-"nnoremap("<C-s>", function() require("harpoon.ui").nav_file(4) end, silent)
