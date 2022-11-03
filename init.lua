@@ -1,0 +1,6 @@
+require("gpadanyig.plugins-setup")
+require("gpadanyig.core.options")
+require("gpadanyig.core.keymaps")
+require("gpadanyig.core.colorscheme")
+require("gpadanyig.plugins.comment")
+require("gpadanyig.plugins.nvim-tree")
