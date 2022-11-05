@@ -102,3 +102,8 @@ lspconfig["sumneko_lua"].setup({
 		},
 	},
 })
+
+lspconfig["angularls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})

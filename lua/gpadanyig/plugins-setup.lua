@@ -34,15 +34,19 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
 	use("phanviet/vim-monokai-pro") -- preferred colorscheme
+	use("https://gitlab.com/__tpb/monokai-pro.nvim")
+	use("bluz71/vim-nightfly-guicolors")
+	use("gruvbox-community/gruvbox")
+	use("sainnhe/sonokai")
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	-- essential plugins
-  -- ysw" (ys, motion, surrounding character), delete: ds" (ds, surrounding character)
+	-- ysw" (ys, motion, surrounding character), delete: ds" (ds, surrounding character)
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
-  -- replace with register contents using motion (gr + motion), e.g. yw to select word, grw to replace
+	-- replace with register contents using motion (gr + motion), e.g. yw to select word, grw to replace
 	use("vim-scripts/ReplaceWithRegister")
 	-- commenting with gc, e.g. gcc to comment single line, gc3j to comment 3 lines down
 	use("numToStr/Comment.nvim")
