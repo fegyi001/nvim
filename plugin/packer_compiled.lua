@@ -109,6 +109,16 @@ _G.packer_plugins = {
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
+  ["dart-vim-plugin"] = {
+    loaded = true,
+    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/dart-vim-plugin",
+    url = "https://github.com/dart-lang/dart-vim-plugin"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/friendly-snippets",

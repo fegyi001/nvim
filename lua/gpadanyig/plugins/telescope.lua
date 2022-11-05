@@ -23,6 +23,12 @@ telescope.setup({
 			},
 		},
 	},
+	pickers = {
+		find_files = {
+			-- theme = "dropdown",
+			path_display = { "smart" },
+		},
+	},
 })
 
 telescope.load_extension("fzf")
