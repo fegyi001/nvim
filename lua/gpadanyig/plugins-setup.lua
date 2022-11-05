@@ -105,8 +105,9 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
 	-- flutter
-	use({ "neoclide/coc.nvim", branch = "release" })
+	-- use({ "neoclide/coc.nvim", branch = "release" })
 	use("dart-lang/dart-vim-plugin")
+	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
 
 	if packer_bootstrap then
 		require("packer").sync()
