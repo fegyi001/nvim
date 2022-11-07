@@ -1,5 +1,18 @@
 local opt = vim.opt
 
+---- helper functions ----
+local scopes = { o = vim.o, b = vim.bo, w = vim.wo }
+
+local function opt2(scope, key, value)
+	scopes[scope][key] = value
+	if scope ~= "o" then
+		scopes["o"][key] = value
+	end
+end
+
+opt2("o", "hlsearch", false)
+opt2("o", "incsearch", true)
+
 -- line numbers
 opt.relativenumber = true
 opt.number = true
