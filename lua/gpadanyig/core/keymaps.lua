@@ -8,6 +8,7 @@ local keymap = vim.keymap
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
+keymap.set("n", "jk", ":w<cr>")
 
 -- disable ALL arrow keys
 keymap.set("n", "<up>", "<nop>")
