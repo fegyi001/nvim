@@ -2,6 +2,9 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+local nnoremap = require("gpadanyig.keymap").nnoremap
+
+local silent = { silent = true }
 ---------------------
 -- General Keymaps
 ---------------------
@@ -68,3 +71,32 @@ keymap.set("n", "<C-b>", ":set hlsearch!<cr>")
 
 -- fzf-lua
 keymap.set("n", "<c-P>", ":lua require('fzf-lua').files()<CR>")
+
+-- harpoon
+-- keymap.set("n", "<leader>a", "lua require('harpoon.mark').add_file()<CR>")
+-- keymap.set("n", "<C-e>", "lua require('harpoon.ui').toggle_quick_menu()<CR>")
+
+-- Terminal commands
+-- ueoa is first through fourth finger left hand home row.
+-- This just means I can crush, with opposite hand, the 4 terminal positions
+--
+-- These functions are stored in harpoon.  A plugn that I am developing
+nnoremap("<leader>a", function()
+	require("harpoon.mark").add_file()
+end, silent)
+nnoremap("<C-e>", function()
+	require("harpoon.ui").toggle_quick_menu()
+end, silent)
+
+nnoremap("<leader>1", function()
+	require("harpoon.ui").nav_file(1)
+end, silent)
+nnoremap("<leader>2", function()
+	require("harpoon.ui").nav_file(2)
+end, silent)
+nnoremap("<leader>3", function()
+	require("harpoon.ui").nav_file(3)
+end, silent)
+nnoremap("<leader>4", function()
+	require("harpoon.ui").nav_file(4)
+end, silent)

@@ -113,6 +113,8 @@ return packer.startup(function(use)
 	use("dart-lang/dart-vim-plugin")
 	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
 
+	use({ "ThePrimeagen/harpoon", requires = "nvim-lua/plenary.nvim" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
