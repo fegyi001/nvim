@@ -100,3 +100,8 @@ end, silent)
 nnoremap("<leader>4", function()
 	require("harpoon.ui").nav_file(4)
 end, silent)
+
+-- setup mapping to call :LazyGit
+-- nnoremap <silent> <leader>gg :LazyGit<CR>
+-- nnoremap("<leader>gg", function() require(":LazyGit"))
+keymap.set("n", "<leader>gg", ":LazyGit<CR>") -- open terminal

@@ -115,6 +115,8 @@ return packer.startup(function(use)
 
 	use({ "ThePrimeagen/harpoon", requires = "nvim-lua/plenary.nvim" })
 
+	use({ "kdheepak/lazygit.nvim" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
