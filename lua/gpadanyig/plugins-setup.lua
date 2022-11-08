@@ -117,6 +117,8 @@ return packer.startup(function(use)
 
 	use({ "kdheepak/lazygit.nvim" })
 
+	use({ "David-Kunz/markid" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
