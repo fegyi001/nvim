@@ -124,6 +124,16 @@ _G.packer_plugins = {
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  fzf = {
+    loaded = true,
+    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/fzf",
+    url = "https://github.com/junegunn/fzf"
+  },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -225,16 +235,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/sonokai",
     url = "https://github.com/sainnhe/sonokai"
-  },
-  ["telescope-fzf-native.nvim"] = {
-    loaded = true,
-    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
-    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["typescript.nvim"] = {
     loaded = true,

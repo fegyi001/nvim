@@ -1,7 +1,7 @@
 require("gpadanyig.plugins.comment")
 require("gpadanyig.plugins.nvim-tree")
 require("gpadanyig.plugins.lualine")
-require("gpadanyig.plugins.telescope")
+require("gpadanyig.plugins.fzf-lua")
 require("gpadanyig.plugins.nvim-cmp")
 require("gpadanyig.plugins.lsp.mason")
 require("gpadanyig.plugins.lsp.lspsaga")
