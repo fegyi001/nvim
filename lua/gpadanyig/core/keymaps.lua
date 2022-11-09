@@ -11,8 +11,8 @@ local silent = { silent = true }
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
-keymap.set("n", "jk", ":w<cr>")
-keymap.set("n", "fd", ":q<cr>")
+keymap.set("n", "<leader>ww", ":w<cr>")
+keymap.set("n", "<leader>qq", ":q<cr>")
 
 -- disable ALL arrow keys
 keymap.set("n", "<up>", "<nop>")
