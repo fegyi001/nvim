@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -168,11 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  markid = {
-    loaded = true,
-    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/markid",
-    url = "https://github.com/David-Kunz/markid"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
