@@ -108,6 +108,7 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 	use({ "kdheepak/lazygit.nvim" })
+	use({ "f-person/git-blame.nvim" }) -- show git blame inline
 
 	-- flutter
 	-- use({ "neoclide/coc.nvim", branch = "release" })

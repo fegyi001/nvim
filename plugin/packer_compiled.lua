@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/fzf-lua",
     url = "https://github.com/ibhagwan/fzf-lua"
   },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
+    url = "https://github.com/f-person/git-blame.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
