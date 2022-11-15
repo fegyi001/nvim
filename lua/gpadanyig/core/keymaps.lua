@@ -47,8 +47,8 @@ keymap.set("n", "<S-l>", ":bnext<CR>") -- go to next tab
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
--- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+-- neotree
+keymap.set("n", "<leader>e", ":Neotree toggle<CR>") -- toggle file explorer
 keymap.set("n", "<leader>t", ":terminal<CR>") -- open terminal
 
 -- telescope
