@@ -122,8 +122,6 @@ return packer.startup(function(use)
 	--React
 	-- use({ "mlaursen/vim-react-snippets", requires = "SirVer/ultisnips" })
 
-	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
-
 	if packer_bootstrap then
 		require("packer").sync()
 	end
