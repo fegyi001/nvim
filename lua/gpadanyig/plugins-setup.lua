@@ -127,12 +127,14 @@ return packer.startup(function(use)
 	use({ "ThePrimeagen/harpoon", requires = "nvim-lua/plenary.nvim" })
 	-- use({ "David-Kunz/markid" })
 
-	use("karb94/neoscroll.nvim")
+	-- use("karb94/neoscroll.nvim")
 
 	--React
 	-- use({ "mlaursen/vim-react-snippets", requires = "SirVer/ultisnips" })
 
 	-- use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
+
+	-- use("djoshea/vim-autoread")
 
 	if packer_bootstrap then
 		require("packer").sync()

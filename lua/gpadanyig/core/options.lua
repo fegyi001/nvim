@@ -17,6 +17,10 @@ opt2("o", "incsearch", true)
 opt.relativenumber = true
 opt.number = true
 
+-- auto read
+vim.opt.autoread = true
+vim.api.nvim_command("autocmd CursorHold * checktime")
+
 -- tabs & indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
