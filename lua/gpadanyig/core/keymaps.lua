@@ -71,6 +71,7 @@ keymap.set("n", "<C-b>", ":set hlsearch!<cr>")
 
 -- fzf-lua
 keymap.set("n", "<c-P>", ":lua require('fzf-lua').files()<CR>")
+keymap.set("n", "<c-O>", ":lua require('fzf-lua').buffers()<CR>")
 
 -- harpoon
 -- keymap.set("n", "<leader>a", "lua require('harpoon.mark').add_file()<CR>")
