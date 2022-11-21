@@ -4,6 +4,8 @@ return {
 
   -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
 
+  ["kdheepak/lazygit.nvim"] = {disable = false},
+
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
     config = function()
