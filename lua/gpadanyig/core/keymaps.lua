@@ -11,8 +11,8 @@ local silent = { silent = true }
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
-keymap.set("n", "<leader>ww", ":w<cr>")
-keymap.set("n", "<leader>qq", ":q<cr>")
+keymap.set("n", "<leader>w", ":w<cr>")
+keymap.set("n", "<leader>q", ":q<cr>")
 
 -- disable ALL arrow keys
 keymap.set("n", "<up>", "<nop>")
@@ -48,8 +48,8 @@ keymap.set("n", "<S-l>", ":bnext<CR>") -- go to next tab
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- neotree
-keymap.set("n", "<leader>e", ":Neotree toggle<CR>") -- toggle file explorer
-keymap.set("n", "<leader>t", ":terminal<CR>") -- open terminal
+keymap.set("n", "<leader>t", ":Neotree toggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>e", ":edit!<CR>") -- open terminal
 
 -- telescope
 -- keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
