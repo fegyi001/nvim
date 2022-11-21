@@ -136,6 +136,8 @@ return packer.startup(function(use)
 
 	-- use("djoshea/vim-autoread")
 
+	use("mattn/emmet-vim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

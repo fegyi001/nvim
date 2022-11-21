@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/dart-vim-plugin",
     url = "https://github.com/dart-lang/dart-vim-plugin"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["flutter-tools.nvim"] = {
     loaded = true,
     path = "/Users/gergely.padanyi-gulyas/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
