@@ -5,6 +5,9 @@ return {
   -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
 
   ["kdheepak/lazygit.nvim"] = {disable = false},
+  ["nvim-lua/plenary.nvim"] = {disable = false},
+  ["dart-lang/dart-vim-plugin"] = {disable = false},
+  ["akinsho/flutter-tools.nvim"] = {disable = false},
 
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
