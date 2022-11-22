@@ -7,7 +7,22 @@ return {
   ["kdheepak/lazygit.nvim"] = {disable = false},
   ["nvim-lua/plenary.nvim"] = {disable = false},
   ["dart-lang/dart-vim-plugin"] = {disable = false},
-  ["akinsho/flutter-tools.nvim"] = {disable = false},
+
+  ["akinsho/flutter-tools.nvim"] = {
+    config = function()
+      require "custom.plugins.flutter-tools"
+    end
+  },
+
+  ["sainnhe/sonokai"] = {
+    config = function()
+      require "custom.plugins.sonokai"
+    end,
+  },
+
+  ["f-person/git-blame.nvim"] = {disable = false},
+
+  ["lewis6991/gitsigns.nvim"] = {disable = false},
 
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {

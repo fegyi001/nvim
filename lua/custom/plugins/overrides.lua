@@ -7,8 +7,20 @@ M.treesitter = {
     "html",
     "css",
     "typescript",
-    "c",
+    "json",
+    "tsx",
+    "yaml",
+    "markdown",
+    "bash",
+    "dockerfile",
+    "gitignore",
   },
+  highlight = {
+    enable = true,
+  },
+  indent = {enable = true},
+  autotag = {enable = true},
+  auto_install = true,
 }
 
 M.mason = {
