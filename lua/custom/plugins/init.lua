@@ -14,12 +14,6 @@ return {
     end
   },
 
-  ["sainnhe/sonokai"] = {
-    config = function()
-      require "custom.plugins.sonokai"
-    end,
-  },
-
   ["f-person/git-blame.nvim"] = {disable = false},
 
   ["lewis6991/gitsigns.nvim"] = {disable = false},
