@@ -34,7 +34,10 @@ M.mason = {
     "html-lsp",
     "typescript-language-server",
     "deno",
+    "tsserver",
+    "tailwindcss"
   },
+  auto_install = true
 }
 
 -- git support in nvimtree
