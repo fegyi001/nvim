@@ -7,6 +7,7 @@ return {
   ["kdheepak/lazygit.nvim"] = {disable = false},
   ["nvim-lua/plenary.nvim"] = {disable = false},
   ["dart-lang/dart-vim-plugin"] = {disable = false},
+  ["christoomey/vim-tmux-navigator"] = {disable = false},
 
   ["akinsho/flutter-tools.nvim"] = {
     config = function()
