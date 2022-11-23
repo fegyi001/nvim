@@ -33,7 +33,11 @@ null_ls.setup {
       end,
     },
     diagnostics.yamllint,
-    diagnostics.commitlint,
+    diagnostics.commitlint.with {
+      condition = function(utils)
+        return utils.root_has_file ".commitlintrc.js"
+      end,
+    },
   },
   -- configure format on save
   on_attach = function(current_client, bufnr)
