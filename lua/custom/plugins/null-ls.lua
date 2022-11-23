@@ -20,6 +20,7 @@ null_ls.setup {
     formatting.stylua, -- lua formatter
     formatting.dart_format, -- dart formatter
     formatting.stylelint,
+    formatting.rustywind,
     diagnostics.markdownlint,
     diagnostics.eslint_d.with { -- js/ts linter
       condition = function(utils)
@@ -32,6 +33,7 @@ null_ls.setup {
       end,
     },
     diagnostics.yamllint,
+    diagnostics.commitlint,
   },
   -- configure format on save
   on_attach = function(current_client, bufnr)
