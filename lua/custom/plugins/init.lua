@@ -4,20 +4,21 @@ return {
 
   -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
 
-  ["kdheepak/lazygit.nvim"] = {disable = false},
-  ["nvim-lua/plenary.nvim"] = {disable = false},
-  ["dart-lang/dart-vim-plugin"] = {disable = false},
-  ["christoomey/vim-tmux-navigator"] = {disable = false},
+  ["kdheepak/lazygit.nvim"] = { disable = false },
+  ["nvim-lua/plenary.nvim"] = { disable = false },
+  ["dart-lang/dart-vim-plugin"] = { disable = false },
+  ["christoomey/vim-tmux-navigator"] = { disable = false },
+  ["mattn/emmet-vim"] = { disable = false },
 
   ["akinsho/flutter-tools.nvim"] = {
     config = function()
       require "custom.plugins.flutter-tools"
-    end
+    end,
   },
 
-  ["f-person/git-blame.nvim"] = {disable = false},
+  ["f-person/git-blame.nvim"] = { disable = false },
 
-  ["lewis6991/gitsigns.nvim"] = {disable = false},
+  ["lewis6991/gitsigns.nvim"] = { disable = false },
 
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
