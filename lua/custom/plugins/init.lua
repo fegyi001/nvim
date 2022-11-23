@@ -2,8 +2,6 @@ local overrides = require "custom.plugins.overrides"
 
 return {
 
-  -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
-
   ["kdheepak/lazygit.nvim"] = { disable = false },
   ["nvim-lua/plenary.nvim"] = { disable = false },
   ["dart-lang/dart-vim-plugin"] = { disable = false },
