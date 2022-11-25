@@ -6,6 +6,8 @@ g.nvchad_theme = config.ui.theme
 g.toggle_theme_icon = "   "
 g.transparency = config.ui.transparency
 g.theme_switcher_loaded = false
+g.user_emmet_leader_key = "<tab>"
+g.user_emmet_settings = { javascript = { extends = "jsx" }, typescript = { extends = "tsx" } }
 
 opt.laststatus = 3 -- global statusline
 opt.showmode = false

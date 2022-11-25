@@ -7,6 +7,7 @@ return {
   ["dart-lang/dart-vim-plugin"] = { disable = false },
   ["christoomey/vim-tmux-navigator"] = { disable = false },
   ["mattn/emmet-vim"] = { disable = false },
+  ["windwp/nvim-ts-autotag"] = { disable = false },
 
   ["akinsho/flutter-tools.nvim"] = {
     config = function()
