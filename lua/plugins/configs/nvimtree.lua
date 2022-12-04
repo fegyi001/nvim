@@ -29,8 +29,8 @@ local options = {
     hide_root_folder = true,
   },
   git = {
-    enable = false,
-    ignore = true,
+    enable = true,
+    ignore = false,
   },
   filesystem_watchers = {
     enable = true,
