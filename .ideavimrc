@@ -1,6 +1,7 @@
 set relativenumber
 set number
 set commentary
+set ignorecase
 
 let mapleader = " "
 
@@ -16,6 +17,7 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-b> <ESC>^i
 inoremap <C-e> <End>
+inoremap jk <ESC>
  
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
