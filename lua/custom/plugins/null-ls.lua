@@ -24,7 +24,7 @@ null_ls.setup {
     diagnostics.markdownlint,
     diagnostics.eslint_d.with { -- js/ts linter
       condition = function(utils)
-        return utils.root_has_file ".eslintrc.js" -- change file extension if you use something else
+        return utils.root_has_file ".eslintrc.js" or utils.root_has_file ".eslintrc.json" -- change file extension if you use something else
       end,
     },
     diagnostics.stylelint.with {
