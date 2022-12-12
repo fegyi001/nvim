@@ -23,6 +23,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
+nnoremap <C-s> :w <CR>
 
 " quickly move line up or down
 nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
