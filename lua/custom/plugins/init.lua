@@ -56,6 +56,13 @@ return {
     end,
   },
 
+  ["ThePrimeagen/refactoring.nvim"] = {
+    config = function()
+      require "nvim-lua/plenary.nvim"
+      require "nvim-treesitter/nvim-treesitter"
+    end,
+  },
+
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
 }
