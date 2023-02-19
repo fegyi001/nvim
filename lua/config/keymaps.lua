@@ -21,8 +21,6 @@ vim.keymap.set("i", "<C-j>", "<Down>")
 vim.keymap.set("i", "<C-k>", "<Up>")
 vim.keymap.set("i", "<C-e>", "<End>")
 
--- inoremap <C-b> <ESC>^i
-
 -- M.general = {
 --   n = {
 --     ["[e"] = { ":<C-u>execute 'move -1-'. v:count1<cr>" },
