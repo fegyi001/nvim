@@ -25,7 +25,9 @@ return {
       return {
         sources = {
           nls.builtins.formatting.stylua,
-          nls.builtins.formatting.prettierd,
+          nls.builtins.formatting.prettierd.with({
+            filetypes = {"html", "json", "yaml", "yml", "markdown"}
+          }),
           nls.builtins.formatting.stylelint,
           nls.builtins.formatting.eslint_d,
           nls.builtins.diagnostics.eslint_d,
