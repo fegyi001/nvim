@@ -1,13 +1,3 @@
--- since this is just an example spec, don't actually load anything here and return an empty spec
--- stylua: ignore
--- if true then return {} end
-
--- every spec file under config.plugins will be loaded automatically by lazy.nvim
---
--- In your plugin files, you can:
--- * add extra plugins
--- * disable/enabled LazyVim plugins
--- * override the configuration of LazyVim plugins
 return {
   -- Configure LazyVim to load tokyonight
   {
@@ -26,13 +16,13 @@ return {
         sources = {
           nls.builtins.formatting.stylua,
           nls.builtins.formatting.prettierd.with({
-            filetypes = {"html", "json", "yaml", "yml", "markdown"}
+            filetypes = { "html", "json", "yaml", "yml", "markdown" },
           }),
           nls.builtins.formatting.stylelint,
           nls.builtins.formatting.eslint_d,
           nls.builtins.diagnostics.eslint_d,
           nls.builtins.diagnostics.stylelint,
-          nls.builtins.code_actions.eslint_d
+          nls.builtins.code_actions.eslint_d,
         },
       }
     end,
@@ -52,12 +42,37 @@ return {
     end,
   },
   {
-    "mattn/emmet-vim",
-    init=function()
-      -- vim.g.user_emmet_mode = 'i'
-      vim.g.user_emmet_leader_key = '<C-z>'
-    end
-  }
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        -- LSP
+        "angular-language-server",
+        "eslint-lsp",
+        "html-lsp",
+        "json-lsp",
+        "lua-language-server",
+        "tailwindcss-language-server",
+        "typescript-language-server",
+        "yaml-language-server",
+        -- DAP
+        "dart-debug-adapter",
+        "js-debug-adapter",
+        -- Linter
+        "ansible-lint",
+        "eslint_d",
+        "jsonlint",
+        "markdownlint",
+        "shellcheck",
+        "yamllint",
+        -- Formatter
+        "prettier",
+        "prettierd",
+        "shfmt",
+        "stylua",
+        "yamlfmt",
+      },
+    },
+  },
   -- {
   --   "neovim/nvim-lspconfig",
   --   dependencies = {
