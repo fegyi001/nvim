@@ -3,8 +3,10 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "monokai-pro",
+      -- colorscheme = "tokyonight",
     },
   },
+  { "folke/tokyonight.nvim" },
   --   "neovim/nvim-lspconfig",
   --   dependencies = {
   --     "jose-elias-alvarez/typescript.nvim",
