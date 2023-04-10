@@ -2,13 +2,14 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "monokai-pro",
-      colorscheme = "tokyonight",
+      colorscheme = "monokai-pro",
+      -- colorscheme = "tokyonight",
       -- colorscheme = "material",
     },
   },
   { "folke/tokyonight.nvim" },
   { "marko-cerovac/material.nvim" },
+  { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
   --   "neovim/nvim-lspconfig",
   --   dependencies = {
   --     "jose-elias-alvarez/typescript.nvim",
