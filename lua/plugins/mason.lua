@@ -11,6 +11,11 @@ return {
       "tailwindcss-language-server",
       "typescript-language-server",
       "yaml-language-server",
+      "emmet-ls",
+      "dockerfile-language-server",
+      "docker-compose-language-service",
+      "ansible-language-server",
+      "nginx-language-server",
       -- DAP
       "dart-debug-adapter",
       "js-debug-adapter",
@@ -21,6 +26,7 @@ return {
       "markdownlint",
       "shellcheck",
       "yamllint",
+      "commitlint",
       -- Formatter
       "prettier",
       "prettierd",
