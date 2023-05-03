@@ -6,6 +6,12 @@ return {
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+    lspconfig.angularls.setup({
+      capabilities = capabilities,
+      filetypes = { "html", "typescript" },
+      root_dir = lspconfig.util.root_pattern("nx.json", "angular.json"),
+    })
+
     lspconfig.emmet_ls.setup({
       -- on_attach = on_attach,
       capabilities = capabilities,
