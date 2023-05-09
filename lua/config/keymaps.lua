@@ -21,6 +21,11 @@ vim.keymap.set("i", "<C-j>", "<Down>")
 vim.keymap.set("i", "<C-k>", "<Up>")
 vim.keymap.set("i", "<C-e>", "<End>")
 
+-- greatest keymap ever
+-- https://www.youtube.com/watch?v=qZO9A5F6BZs
+-- 6:26
+vim.keymap.vim("x", "<leader>p", '"_dP')
+
 -- M.general = {
 --   n = {
 --     ["[e"] = { ":<C-u>execute 'move -1-'. v:count1<cr>" },
