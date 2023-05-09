@@ -24,7 +24,7 @@ vim.keymap.set("i", "<C-e>", "<End>")
 -- greatest keymap ever
 -- https://www.youtube.com/watch?v=qZO9A5F6BZs
 -- 6:26
-vim.keymap.vim("x", "<leader>p", '"_dP')
+vim.keymap.set("x", "<leader>p", '"_dP')
 
 -- M.general = {
 --   n = {
