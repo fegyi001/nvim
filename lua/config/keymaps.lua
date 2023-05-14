@@ -26,6 +26,13 @@ vim.keymap.set("i", "<C-e>", "<End>")
 -- 6:26
 vim.keymap.set("x", "<leader>p", '"_dP')
 
+--vim-test
+vim.keymap.set("n", "<silent><leader>t", ":TestNearest<CR>")
+vim.keymap.set("n", "<silent><leader>T", ":TestFile<CR>")
+vim.keymap.set("n", "<silent><leader>a", ":TestSuite<CR>")
+vim.keymap.set("n", "<silent><leader>l", ":TestLast<CR>")
+vim.keymap.set("n", "<silent><leader>g", ":TestVisit<CR>")
+
 -- M.general = {
 --   n = {
 --     ["[e"] = { ":<C-u>execute 'move -1-'. v:count1<cr>" },
