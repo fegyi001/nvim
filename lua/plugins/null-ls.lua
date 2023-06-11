@@ -7,7 +7,7 @@ return {
     return {
       sources = {
         nls.builtins.formatting.stylua,
-        nls.builtins.formatting.prettierd.with({
+        nls.builtins.formatting.prettier.with({
           filetypes = { "html", "json", "yaml", "yml", "markdown", "typescriptreact", "javascriptreact" },
         }),
         nls.builtins.formatting.stylelint.with({
