@@ -20,7 +20,7 @@ vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
 vim.keymap.set("n", "<leader>mc", "<cmd> ZenMode<CR>", { desc = "Toggle ZenMode" })
 
 vim.keymap.set("i", "jk", "<ESC>")
-vim.keymap.set("i", "<leader><leader>", "<ESC>")
+-- vim.keymap.set("i", "<leader><leader>", "<ESC>")
 vim.keymap.set("i", "<C-h>", "<Left>")
 vim.keymap.set("i", "<C-l>", "<Right>")
 vim.keymap.set("i", "<C-j>", "<Down>")
