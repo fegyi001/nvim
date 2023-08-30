@@ -1,6 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
 vim.keymap.set(
   "n",
   "<leader>sx",
@@ -20,12 +17,48 @@ vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
 vim.keymap.set("n", "<leader>mc", "<cmd> ZenMode<CR>", { desc = "Toggle ZenMode" })
 
 vim.keymap.set("i", "jk", "<ESC>")
--- vim.keymap.set("i", "<leader><leader>", "<ESC>")
 vim.keymap.set("i", "<C-h>", "<Left>")
 vim.keymap.set("i", "<C-l>", "<Right>")
 vim.keymap.set("i", "<C-j>", "<Down>")
 vim.keymap.set("i", "<C-k>", "<Up>")
 vim.keymap.set("i", "<C-e>", "<End>")
+
+vim.keymap.set(
+  "n",
+  "<leader>gs",
+  "<cmd>lua require('custom.angular').toggle_between_spec_and_file()<cr>",
+  { desc = "Toggle between spec and file" }
+)
+vim.keymap.set(
+  "n",
+  "<leader>gd",
+  "<cmd>lua require('custom.angular').toggle_between_html_and_ts()<cr>",
+  { desc = "Toggle between spec and file" }
+)
+vim.keymap.set("n", "<leader>bw", "<cmd>bufdo bwipeout<cr>", { desc = "Close all buffers" })
+
+vim.keymap.set("n", "<leader>-", "<cmd>rightbelow split <cr>")
+vim.keymap.set("n", "<leader>\\", "<cmd>rightbelow vsplit <cr>")
+
+-- move lines
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+
+-- aerial
+require("aerial").setup({
+  on_attach = function(bufnr)
+    -- Jump forwards/backwards with '{' and '}'
+    vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
+    vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
+  end,
+})
+vim.keymap.set("n", "<leader>x", "<cmd>AerialToggle!<CR>")
+
+-- jesting
+vim.keymap.set("n", "<leader>ja", vim.cmd.Jest)
+vim.keymap.set("n", "<leader>jf", vim.cmd.JestFile)
+vim.keymap.set("n", "<leader>js", vim.cmd.JestSingle)
+vim.keymap.set("n", "<leader>jc", vim.cmd.JestCoverage)
 
 -- greatest keymap ever
 -- https://www.youtube.com/watch?v=qZO9A5F6BZs
