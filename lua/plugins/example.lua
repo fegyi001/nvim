@@ -9,15 +9,15 @@ return {
     },
   },
   { "folke/tokyonight.nvim" },
-  { "marko-cerovac/material.nvim" },
-  { "sainnhe/sonokai" },
+  -- { "marko-cerovac/material.nvim" },
+  -- { "sainnhe/sonokai" },
   { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
   { "ggandor/leap.nvim", enabled = false },
   { -- Additional text objects via treesitter
     "nvim-treesitter/nvim-treesitter-textobjects",
     after = "nvim-treesitter",
   },
-  { "ThePrimeagen/harpoon" },
+  -- { "kevinhwang91/nvim-bqf" },
   --   "neovim/nvim-lspconfig",
   --   dependencies = {
   --     "jose-elias-alvarez/typescript.nvim",
