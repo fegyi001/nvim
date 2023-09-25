@@ -17,6 +17,10 @@ return {
     "nvim-treesitter/nvim-treesitter-textobjects",
     after = "nvim-treesitter",
   },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    enabled = false,
+  },
   -- { "kevinhwang91/nvim-bqf" },
   --   "neovim/nvim-lspconfig",
   --   dependencies = {

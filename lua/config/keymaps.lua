@@ -15,6 +15,8 @@ vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "Window rig
 vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "Window down" })
 vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
 vim.keymap.set("n", "<leader>mc", "<cmd> ZenMode<CR>", { desc = "Toggle ZenMode" })
+vim.keymap.set("n", "<leader>e", "<cmd> NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
+vim.keymap.set("n", "<leader>ef", "<cmd> NvimTreeFindFile<CR>", { desc = "Focus file in NvimTree" })
 
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("i", "<C-h>", "<Left>")
