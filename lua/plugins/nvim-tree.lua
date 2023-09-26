@@ -7,7 +7,7 @@ return {
     local nvimtree = require("nvim-tree")
     nvimtree.setup({
       view = {
-        width = 70,
+        width = 60,
       },
       filters = {
         custom = { "^.git$", "node_modules" },
