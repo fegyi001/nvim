@@ -1,8 +1,22 @@
 return {
   "folke/flash.nvim",
   event = "VeryLazy",
-  ---@type Flash.Config
-  opts = {},
+  opts = {
+    label = {
+      rainbow = {
+        enabled = true,
+        shade = 6,
+      },
+    },
+    highlight = {
+      backdrop = true,
+    },
+    modes = {
+      search = {
+        highlight = { backdrop = true },
+      },
+    },
+  },
   keys = {
     {
       "s",
