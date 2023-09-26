@@ -60,6 +60,12 @@ vim.keymap.set("n", "<leader>jc", vim.cmd.JestCoverage)
 -- 6:26
 vim.keymap.set("x", "<leader>p", '"_dP')
 
+if vim.lsp.inlay_hint then
+  vim.keymap.set("n", "<leader>uh", function()
+    vim.lsp.inlay_hint(0, nil)
+  end, { desc = "Toggle Inlay Hints" })
+end
+
 -- M.general = {
 --   n = {
 --     ["[e"] = { ":<C-u>execute 'move -1-'. v:count1<cr>" },

@@ -3,8 +3,8 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "sonokai",
-      colorscheme = "monokai-pro",
-      -- colorscheme = "tokyonight",
+      -- colorscheme = "monokai-pro",
+      colorscheme = "tokyonight",
       -- colorscheme = "material",
     },
   },
