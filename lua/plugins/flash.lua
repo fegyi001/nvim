@@ -9,11 +9,11 @@ return {
       },
     },
     highlight = {
-      backdrop = true,
+      backdrop = false,
     },
     modes = {
       search = {
-        highlight = { backdrop = true },
+        highlight = { backdrop = false },
       },
     },
   },
