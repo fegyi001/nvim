@@ -29,7 +29,6 @@ return {
       "commitlint",
       -- Formatter
       "prettier",
-      "prettierd",
       "shfmt",
       "stylua",
       "yamlfmt",
