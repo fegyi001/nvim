@@ -1,6 +1,6 @@
 return {
   "Equilibris/nx.nvim",
-  requires = {
+  dependencies = {
     "nvim-telescope/telescope.nvim",
   },
   opts = {

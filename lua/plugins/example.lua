@@ -15,7 +15,7 @@ return {
   { "ggandor/leap.nvim", enabled = false },
   { -- Additional text objects via treesitter
     "nvim-treesitter/nvim-treesitter-textobjects",
-    after = "nvim-treesitter",
+    -- after = "nvim-treesitter",
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
