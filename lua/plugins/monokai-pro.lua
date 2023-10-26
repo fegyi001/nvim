@@ -1,5 +1,5 @@
 return {
-  "loctvl842/monokai-pro.nvim",
+  "fegyi001/monokai-pro.nvim",
   config = function()
     local plugin = require("monokai-pro")
     plugin.setup({
@@ -41,7 +41,7 @@ return {
           underline_visible = false,
         },
         indent_blankline = {
-          context_highlight = "default", -- default | pro
+          context_highlight = "pro", -- default | pro
           context_start_underline = false,
         },
       },

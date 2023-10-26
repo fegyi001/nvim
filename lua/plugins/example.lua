@@ -3,14 +3,14 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "sonokai",
-      -- colorscheme = "monokai-pro",
-      colorscheme = "tokyonight",
+      colorscheme = "monokai-pro",
+      -- colorscheme = "tokyonight",
       -- colorscheme = "material",
     },
   },
   { "folke/tokyonight.nvim" },
-  -- { "marko-cerovac/material.nvim" },
-  -- { "sainnhe/sonokai" },
+  { "marko-cerovac/material.nvim" },
+  { "sainnhe/sonokai" },
   { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
   { "ggandor/leap.nvim", enabled = false },
   { -- Additional text objects via treesitter
