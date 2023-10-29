@@ -1,5 +1,6 @@
 return {
   "aca/emmet-ls",
+  event = "VeryLazy",
   init = function()
     local lspconfig = require("lspconfig")
     -- local configs = require("lspconfig/configs")

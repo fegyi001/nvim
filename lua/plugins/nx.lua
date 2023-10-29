@@ -1,5 +1,7 @@
 return {
   "Equilibris/nx.nvim",
+  event = "VeryLazy",
+  enabled = false,
   dependencies = {
     "nvim-telescope/telescope.nvim",
   },
