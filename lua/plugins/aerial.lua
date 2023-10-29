@@ -1,5 +1,6 @@
 return {
   "stevearc/aerial.nvim",
+  event = "VeryLazy",
   config = function()
     local plugin = require("aerial")
     plugin.setup({

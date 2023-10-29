@@ -1,5 +1,6 @@
 return {
   "brenoprata10/nvim-highlight-colors",
+  event = "VeryLazy",
   opts = {
     config = function()
       require("nvim-highglight-colors").setup({
