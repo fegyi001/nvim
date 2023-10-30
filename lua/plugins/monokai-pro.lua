@@ -1,5 +1,5 @@
 return {
-  "fegyi001/monokai-pro.nvim",
+  "loctvl842/monokai-pro.nvim",
   config = function()
     local plugin = require("monokai-pro")
     plugin.setup({
