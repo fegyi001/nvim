@@ -9,6 +9,7 @@ return {
     opts = {
       ensure_installed = {
         "bash",
+        "dart",
         "vimdoc",
         "html",
         "javascript",
