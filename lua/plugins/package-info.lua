@@ -3,6 +3,7 @@ return {
   dependencies = {
     "MunifTanjim/nui.nvim",
   },
+  event = "VeryLazy",
   config = function()
     require("package-info").setup({
       colors = {
