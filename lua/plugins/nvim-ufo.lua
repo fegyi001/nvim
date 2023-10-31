@@ -21,21 +21,6 @@ return {
       end
     end, { desc = "Peek fold" })
 
-    local capabilities = vim.lsp.protocol.make_client_capabilities()
-    local lspconfig = require("lspconfig")
-
-    capabilities.textDocument.foldingRange = {
-      dynamicRegistration = false,
-      lineFoldingOnly = true,
-    }
-    local language_servers = lspconfig.util.available_servers() -- or list servers manually like {'gopls', 'clangd'}
-    for _, ls in ipairs(language_servers) do
-      lspconfig[ls].setup({
-        capabilities = capabilities,
-        -- you can add other fields for setting up lsp server in this table
-      })
-    end
-
     ufo.setup({
       close_fold_kinds = { "imports", "comment" },
       provider_selector = function(bufnr, filetype, buftype)
