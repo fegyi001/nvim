@@ -8,7 +8,6 @@ return {
   },
   {
     "folke/tokyonight.nvim",
-    enabled = false,
   },
   { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
   {
