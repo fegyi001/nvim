@@ -1,6 +1,5 @@
 return {
-  -- "loctvl842/monokai-pro.nvim",
-  "fegyi001/monokai-pro.nvim",
+  "loctvl842/monokai-pro.nvim",
   config = function()
     local plugin = require("monokai-pro")
     plugin.setup({
@@ -46,8 +45,11 @@ return {
           context_start_underline = false,
         },
       },
-      ---@param c Colorscheme
-      override = function(c) end,
+      override = function(c)
+        return {
+          LspInlayHint = { bg = c.editor.background, fg = c.editorInlayHint.foreground },
+        }
+      end,
     })
   end,
 }
