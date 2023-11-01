@@ -61,7 +61,7 @@ vim.keymap.set("n", "<leader>jc", vim.cmd.JestCoverage)
 vim.keymap.set("x", "<leader>p", '"_dP')
 
 if vim.lsp.inlay_hint then
-  vim.keymap.set("n", "<leader>uh", function()
+  vim.keymap.set("n", "<leader>i", function()
     vim.lsp.inlay_hint(0, nil)
   end, { desc = "Toggle Inlay Hints" })
 end
