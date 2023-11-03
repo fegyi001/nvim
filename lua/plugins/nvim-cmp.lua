@@ -31,6 +31,22 @@ return {
         ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
         ["<C-e>"] = cmp.mapping.abort(), -- close completion window
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<Tab>"] = cmp.mapping(function(fallback)
+          if require("copilot.suggestion").is_visible() then
+            require("copilot.suggestion").accept()
+          elseif cmp.visible() then
+            cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
+          elseif luasnip.expandable() then
+            luasnip.expand()
+          elseif has_words_before() then
+            cmp.complete()
+          else
+            fallback()
+          end
+        end, {
+          "i",
+          "s",
+        }),
       }),
       -- sources for autocompletion
       sources = cmp.config.sources({
