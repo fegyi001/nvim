@@ -18,6 +18,12 @@ vim.keymap.set("n", "<leader>mc", "<cmd> ZenMode<CR>", { desc = "Toggle ZenMode"
 vim.keymap.set("n", "<leader>e", "<cmd> NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
 vim.keymap.set("n", "<leader>ef", "<cmd> NvimTreeFindFile<CR>", { desc = "Focus file in NvimTree" })
 
+-- Resize window using <ctrl> arrow keys
+vim.keymap.set("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+vim.keymap.set("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Decrease window width" })
+vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Increase window width" })
+
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("i", "<C-h>", "<Left>")
 vim.keymap.set("i", "<C-l>", "<Right>")

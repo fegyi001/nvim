@@ -25,6 +25,7 @@ return {
         color = {
           enabled = true,
           background = true,
+          foreground = true,
           virtual_text = false,
         },
         settings = {
@@ -40,6 +41,16 @@ return {
   config = function()
     local telescope = require("telescope")
     telescope.load_extension("flutter")
-    vim.keymap.set("n", "<leader>Ft", telescope.extensions.flutter.commands, { desc = "Telescope flutter commands" })
+    local lazy = require("flutter-tools.lazy")
+    local commands = lazy.require("flutter-tools.commands")
+    vim.keymap.set("n", "<leader>Fr", commands.reload, { desc = "Flutter tools: Hot reload" })
+    vim.keymap.set("n", "<leader>FR", commands.restart, { desc = "Flutter tools: Hot restart" })
+    vim.keymap.set(
+      "n",
+      "<leader>Fo",
+      require("flutter-tools.outline").toggle,
+      { desc = "Flutter tools: Toggle Outline" }
+    )
+    vim.keymap.set("n", "<leader>Ft", telescope.extensions.flutter.commands, { desc = "Flutter tools: Telescope" })
   end,
 }
