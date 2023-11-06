@@ -9,9 +9,4 @@ return {
   {
     "folke/tokyonight.nvim",
   },
-  { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
-  {
-    "nvim-treesitter/nvim-treesitter-textobjects",
-    after = "nvim-treesitter",
-  },
 }
