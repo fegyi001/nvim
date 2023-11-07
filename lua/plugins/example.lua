@@ -1,5 +1,4 @@
 return {
-  { "folke/noice.nvim", enabled = false },
   -- { "kevinhwang91/nvim-bqf" },
   --   "neovim/nvim-lspconfig",
   --   dependencies = {
