@@ -10,7 +10,7 @@ return {
       typescript = true,
       html = true,
       javascript = true,
-      ["*"] = false,
+      ["*"] = true,
     },
     suggestion = {
       enabled = true,

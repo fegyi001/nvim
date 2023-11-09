@@ -43,7 +43,7 @@ return {
     telescope.load_extension("flutter")
     local lazy = require("flutter-tools.lazy")
     local commands = lazy.require("flutter-tools.commands")
-    vim.keymap.set("n", "<leader>Fr", commands.reload, { desc = "Flutter tools: Hot reload" })
+    vim.keymap.set("n", "<leader>FF", commands.reload, { desc = "Flutter tools: Hot reload" })
     vim.keymap.set("n", "<leader>FR", commands.restart, { desc = "Flutter tools: Hot restart" })
     vim.keymap.set(
       "n",
