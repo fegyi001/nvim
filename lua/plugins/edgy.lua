@@ -1,7 +1,6 @@
 return {
   "folke/edgy.nvim",
   event = "VeryLazy",
-  enabled = false,
   keys = {
     {
       "<leader>ue",
@@ -54,7 +53,7 @@ return {
     left = {
       -- Neo-tree filesystem always takes half the screen height
       {
-        title = "Neo-Tree",
+        title = "Files",
         ft = "neo-tree",
         filter = function(buf)
           return vim.b[buf].neo_tree_source == "filesystem"
@@ -62,7 +61,7 @@ return {
         size = { height = 0.5 },
       },
       {
-        title = "Neo-Tree Git",
+        title = "Git",
         ft = "neo-tree",
         filter = function(buf)
           return vim.b[buf].neo_tree_source == "git_status"
@@ -71,7 +70,7 @@ return {
         open = "Neotree position=right git_status",
       },
       {
-        title = "Neo-Tree Buffers",
+        title = "Buffers",
         ft = "neo-tree",
         filter = function(buf)
           return vim.b[buf].neo_tree_source == "buffers"
@@ -79,11 +78,11 @@ return {
         pinned = true,
         open = "Neotree position=top buffers",
       },
-      {
-        ft = "Outline",
-        pinned = true,
-        open = "SymbolsOutline",
-      },
+      -- {
+      --   ft = "Outline",
+      --   pinned = true,
+      --   open = "SymbolsOutline",
+      -- },
       -- any other neo-tree windows
       "neo-tree",
     },
