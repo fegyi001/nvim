@@ -15,8 +15,6 @@ vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "Window rig
 vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "Window down" })
 vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
 vim.keymap.set("n", "<leader>mc", "<cmd> ZenMode<CR>", { desc = "Toggle ZenMode" })
-vim.keymap.set("n", "<leader>e", "<cmd> NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
-vim.keymap.set("n", "<leader>ef", "<cmd> NvimTreeFindFile<CR>", { desc = "Focus file in NvimTree" })
 
 -- Resize window using <ctrl> arrow keys
 vim.keymap.set("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
@@ -51,9 +49,6 @@ vim.keymap.set("n", "<leader>\\", "<cmd>rightbelow vsplit <cr>")
 -- move lines
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-
--- aerial
-vim.keymap.set("n", "<leader>x", "<cmd>AerialToggle!<CR>")
 
 -- jesting
 vim.keymap.set("n", "<leader>ja", vim.cmd.Jest)
