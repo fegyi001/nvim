@@ -83,6 +83,9 @@ return {
           { "git_status", highlight = "NeoTreeDimText" },
         },
       },
+      window = {
+        width = 70,
+      },
     },
     window = {
       mappings = {
