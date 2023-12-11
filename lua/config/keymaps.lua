@@ -5,6 +5,7 @@ vim.keymap.set(
   { noremap = true, silent = true, desc = "Resume" }
 )
 
+vim.keymap.set("n", "<space><space>", "<nop>", {})
 vim.keymap.set("n", "'", ":", { nowait = true, desc = "Command mode" })
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
