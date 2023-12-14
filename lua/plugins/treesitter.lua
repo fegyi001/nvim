@@ -4,9 +4,7 @@ return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
   -- add more treesitter parsers
   {
-    "dlvandenberg/nvim-treesitter",
-    branch = "feature-angular",
-    -- "nvim-treesitter/nvim-treesitter",
+    "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
         "bash",
