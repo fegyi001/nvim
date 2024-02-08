@@ -2,15 +2,15 @@ return {
   {
     "neovim/nvim-lspconfig",
     -- https://github.com/neovim/neovim/issues/26520
-    config = function()
-      local capabilities = vim.tbl_deep_extend("force", vim.lsp.protocol.make_client_capabilities(), {
-        workspace = {
-          didChangeWatchedFiles = {
-            dynamicRegistration = false,
-          },
-        },
-      })
-    end,
+    -- config = function()
+    -- local capabilities = vim.tbl_deep_extend("force", vim.lsp.protocol.make_client_capabilities(), {
+    --   workspace = {
+    --     didChangeWatchedFiles = {
+    --       dynamicRegistration = false,
+    --     },
+    --   },
+    -- })
+    -- end,
     opts = {
       -- capabilities = {
       --   workspace = {

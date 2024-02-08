@@ -6,7 +6,7 @@ return {
       require("nvim-highglight-colors").setup({
         render = "first_column",
         enable_named_colors = true,
-        enable_tailwind = false,
+        enable_tailwind = true,
       })
     end,
   },

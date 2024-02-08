@@ -8,7 +8,7 @@ return {
       "html-lsp",
       "json-lsp",
       "lua-language-server",
-      -- "tailwindcss-language-server",
+      "tailwindcss-language-server",
       "typescript-language-server",
       "yaml-language-server",
       "emmet-ls",
@@ -33,5 +33,20 @@ return {
       "stylua",
       "yamlfmt",
     },
+    config = function()
+      local lspconfig = require("lspconfig")
+      lspconfig.tailwindcss.setup({
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                { "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+                { "cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)" },
+              },
+            },
+          },
+        },
+      })
+    end,
   },
 }
