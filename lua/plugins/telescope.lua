@@ -28,6 +28,8 @@ return {
         file_ignore_patterns = {
           "node_modules",
           ".yarn",
+          ".git",
+          ".nx",
         },
       },
     })

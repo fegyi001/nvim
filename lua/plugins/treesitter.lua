@@ -5,6 +5,9 @@ return {
   -- add more treesitter parsers
   {
     "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = { "nvim-treesitter/nvim-treesitter-textobjects" },
     opts = {
       ensure_installed = {
         "bash",
@@ -25,17 +28,18 @@ return {
         "yaml",
         "groovy",
       },
+      incremental_selection = {
+        enable = true,
+        keymaps = {
+          init_selection = "<C-space>",
+          node_incremental = "<C-space>",
+          scope_incremental = false,
+          node_decremental = "<bs>",
+        },
+      },
     },
   },
   {
     "nvim-treesitter/playground",
-  },
-  -- {
-  --   "elgiano/nvim-treesitter-angular",
-  --   branch = "topic/jsx-fix",
-  -- },
-  {
-    "nvim-treesitter/nvim-treesitter-textobjects",
-    after = "nvim-treesitter",
   },
 }

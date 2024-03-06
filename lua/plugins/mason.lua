@@ -13,6 +13,7 @@ return {
       "yaml-language-server",
       "emmet-ls",
       "dockerfile-language-server",
+      "hadolint",
       "docker-compose-language-service",
       "ansible-language-server",
       "nginx-language-server",
