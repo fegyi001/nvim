@@ -10,6 +10,7 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter-textobjects" },
     opts = {
       ensure_installed = {
+        "dockerfile",
         "bash",
         "dart",
         "vimdoc",
