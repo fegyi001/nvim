@@ -1,2 +1,4 @@
 *.log
 lazy-lock.json
+.idea
+.DS_Store
