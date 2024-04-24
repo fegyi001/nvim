@@ -29,13 +29,19 @@ return {
 					{ desc = "💤 Lazy update", group = "DashboardShortCut", action = "Lazy update", key = "l" },
 					{ desc = "📦 Mason", group = "DashboardShortCut", action = "Mason", key = "m" },
 					{
+						desc = "📁 Browse Files",
+						group = "Label",
+						action = "Telescope file_browser path=%:p:h=%:p:h<cr>",
+						key = "b",
+					},
+					{
 						desc = "📁 Find Files",
 						group = "Label",
 						action = "Telescope find_files",
 						key = "f",
 					},
 					{
-						desc = "♻️  Find Recent Files                   ",
+						desc = "📁 Find Recent Files                   ",
 						group = "Label",
 						action = "Telescope oldfiles",
 						key = "r",

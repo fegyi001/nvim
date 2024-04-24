@@ -53,7 +53,7 @@ return {
 			{ desc = "Find string under cursor in cwd" }
 		)
 		keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
-		-- keymap.set("n", "<leader>fe", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
+		keymap.set("n", "<leader>fe", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
 		-- keymap.set("i", "<C-i>", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
 	end,
 	-- change some options
