@@ -52,6 +52,7 @@ return {
 			"<cmd>Telescope grep_string hidden=true<cr>",
 			{ desc = "Find string under cursor in cwd" }
 		)
+		keymap.set("n", "<leader>fn", "<cmd>Telescope notify<cr>", { desc = "Find notifications" })
 		keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 		keymap.set("n", "<leader>fe", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
 		-- keymap.set("i", "<C-i>", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })

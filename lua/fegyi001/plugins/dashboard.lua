@@ -26,7 +26,7 @@ return {
 					"",
 				},
 				center = {
-					{ desc = "💤 Lazy update", group = "DashboardShortCut", action = "Lazy update", key = "l" },
+					{ desc = "💤 Lazy", group = "DashboardShortCut", action = "Lazy", key = "l" },
 					{ desc = "📦 Mason", group = "DashboardShortCut", action = "Mason", key = "m" },
 					{
 						desc = "📁 Browse Files",
