@@ -43,12 +43,29 @@ return {
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
 
-		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-		keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
-		keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-		keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", { desc = "Fuzzy find files in cwd" })
+		keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles hidden=true<cr>", { desc = "Fuzzy find recent files" })
+		keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep hidden=true<cr>", { desc = "Find string in cwd" })
+		keymap.set(
+			"n",
+			"<leader>fc",
+			"<cmd>Telescope grep_string hidden=true<cr>",
+			{ desc = "Find string under cursor in cwd" }
+		)
 		keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
-		keymap.set("n", "<leader>fe", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
-		keymap.set("i", "<C-i>", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
+		-- keymap.set("n", "<leader>fe", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
+		-- keymap.set("i", "<C-i>", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
 	end,
+	-- change some options
+	opts = {
+		defaults = {
+			layout_strategy = "horizontal",
+			layout_config = {
+				prompt_position = "top",
+				horizontal = { width = 0.9, height = 0.95, preview_height = 0.5 },
+			},
+			sorting_strategy = "ascending",
+			winblend = 10,
+		},
+	},
 }

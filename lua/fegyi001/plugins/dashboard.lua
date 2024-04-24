@@ -67,9 +67,9 @@ return {
 					local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
 					return {
 						"",
-						"🚀 This is Neovim v" .. semver,
+						"Neovim v" .. semver,
 						"",
-						"⚡Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms",
+						"🚀 Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms",
 					}
 				end,
 				hide = {
