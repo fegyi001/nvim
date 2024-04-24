@@ -10,6 +10,8 @@ keymap.set("i", "<C-k>", "<Up>")
 keymap.set("i", "<C-e>", "<End>")
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>l", ":Lazy<CR>", { desc = "Open Lazy" })
+keymap.set("n", "<leader>m", ":Mason<CR>", { desc = "Open Mason" })
 keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save" })
 
 -- increment/decrement numbers
