@@ -55,6 +55,9 @@ return {
 		keymap.set("n", "<leader>fn", "<cmd>Telescope notify<cr>", { desc = "Find notifications" })
 		keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 		keymap.set("n", "<leader>fe", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
+		keymap.set("n", "<leader>fy", "<cmd>Telescope registers<cr>", { desc = "Find registers" })
+		keymap.set("n", "<leader>fq", "<cmd>Telescope quickfix<cr>", { desc = "Quickfix list" })
+		keymap.set("n", "<leader>fo", "<cmd>Telescope buffers<cr>", { desc = "Find opened files" })
 		-- keymap.set("i", "<C-i>", "<cmd>Telescope emoji<cr>", { desc = "Find emojis" })
 	end,
 	-- change some options
