@@ -50,7 +50,7 @@ return {
 						desc = "🔍 Search text",
 						group = "Label",
 						action = "Telescope live_grep",
-						key = "g",
+						key = "s",
 					},
 					{
 						desc = "🍺 Quit",

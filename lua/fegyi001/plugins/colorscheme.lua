@@ -1,5 +1,8 @@
 return {
 	"loctvl842/monokai-pro.nvim",
+	dependencies = {
+		"folke/tokyonight.nvim",
+	},
 	priority = 1000,
 	config = function()
 		vim.cmd("colorscheme monokai-pro")
