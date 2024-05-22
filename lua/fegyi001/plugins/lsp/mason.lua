@@ -48,6 +48,7 @@ return {
 				"typescript-language-server",
 				"yaml-language-server",
 				"emmet-ls",
+				"helm-ls",
 				"dockerfile-language-server",
 				"docker-compose-language-service",
 				"ansible-language-server",
