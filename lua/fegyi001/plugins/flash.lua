@@ -19,7 +19,7 @@ return {
 	},
 	keys = {
 		{
-			"/",
+			"j/",
 			mode = { "n", "x", "o" },
 			function()
 				require("flash").jump({
@@ -33,7 +33,6 @@ return {
 			desc = "Flash",
 		},
 		{
-			-- "S",
 			"<leader>/",
 			mode = { "n", "o", "x" },
 			function()
