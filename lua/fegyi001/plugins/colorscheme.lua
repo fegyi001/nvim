@@ -6,7 +6,7 @@ return {
 		local plugin = require("monokai-pro")
 		plugin.setup({
 			transparent_background = false,
-			terminal_colors = true,
+			terminal_colors = false,
 			devicons = true, -- highlight the icons of `nvim-web-devicons`
 			styles = {
 				comment = { italic = true },
