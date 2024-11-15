@@ -2,9 +2,10 @@ local function augroup(name)
 	return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
 end
 
-local function set_jenkinsfile_filetype()
-	vim.cmd("autocmd BufNewFile,BufRead *Jenkinsfile* set filetype=groovy")
-end
+-- local function set_jenkinsfile_filetype()
+-- 	vim.cmd("autocmd BufNewFile,BufRead *Jenkinsfile* set filetype=groovy")
+-- end
+-- set_jenkinsfile_filetype()
 
 vim.api.nvim_create_autocmd("FileType", {
 	group = augroup("wrap_spell"),
@@ -15,4 +16,9 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
-set_jenkinsfile_filetype()
+vim.api.nvim_create_autocmd("VimLeavePre", {
+	pattern = "*",
+	callback = function()
+		vim.cmd("SessionSave")
+	end,
+})
