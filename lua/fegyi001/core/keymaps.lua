@@ -14,6 +14,7 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<leader>l", ":Lazy<CR>", { desc = "Open Lazy" })
 keymap.set("n", "<leader>m", ":Mason<CR>", { desc = "Open Mason" })
 keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save" })
+keymap.set("n", "<leader>q", "ZZ<CR>", { desc = "Quit all" })
 
 keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Go to Previus Buffer" })
 keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Go to Next Buffer" })
