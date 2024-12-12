@@ -37,7 +37,7 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 -- Buffers
-keymap.set("n", "<leader>bd", "<cmd>bdelete %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+keymap.set("n", "<leader>bd", "<cmd>bdelete %<CR>", { desc = "Close buffer" }) --  move current buffer to new tab
 keymap.set("n", "<leader>bw", "<cmd>bufdo bwipeout<cr>", { desc = "Close all buffers" })
 
 -- greatest keymap ever
