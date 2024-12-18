@@ -13,7 +13,9 @@ return {
 			notification = {
 				window = {
 					winblend = 0,
-					border = "rounded",
+					border = "none",
+					x_padding = 1,
+					y_padding = 0,
 				},
 			},
 		},

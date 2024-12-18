@@ -33,7 +33,7 @@ return {
 				"which-key",
 				"renamer",
 				"notify",
-				-- "nvim-tree",
+				"nvim-tree",
 				"neo-tree",
 				"bufferline", -- better used if background of `neo-tree` or `nvim-tree` is cleared
 			},
@@ -41,6 +41,8 @@ return {
 				bufferline = {
 					underline_selected = false,
 					underline_visible = false,
+					underline_fill = true,
+					bold = false,
 				},
 				indent_blankline = {
 					context_highlight = "pro", -- default | pro

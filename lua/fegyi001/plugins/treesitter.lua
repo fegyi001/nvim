@@ -30,6 +30,8 @@ return {
 				"tsx",
 				"yaml",
 				"html",
+				"toml",
+				"rust",
 				"http",
 				"css",
 				"markdown",

@@ -53,9 +53,11 @@ return {
 				"docker-compose-language-service",
 				"ansible-language-server",
 				"nginx-language-server",
+				-- "rust-analyzer",
 				-- DAP
 				-- "dart-debug-adapter",
 				-- "js-debug-adapter",
+				"codelldb",
 				-- Linter
 				"ansible-lint",
 				"eslint_d",
