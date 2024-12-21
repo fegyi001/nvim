@@ -22,3 +22,11 @@ vim.api.nvim_create_autocmd("FileType", {
 -- 		vim.cmd("SessionSave")
 -- 	end,
 -- })
+
+-- Auto format on exiting insert mode
+vim.api.nvim_create_autocmd("InsertLeave", {
+	pattern = "*",
+	callback = function()
+		vim.lsp.buf.format({ async = true })
+	end,
+})
