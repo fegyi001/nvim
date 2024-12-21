@@ -16,9 +16,9 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
-vim.api.nvim_create_autocmd("VimLeavePre", {
-	pattern = "*",
-	callback = function()
-		vim.cmd("SessionSave")
-	end,
-})
+-- vim.api.nvim_create_autocmd("VimLeavePre", {
+-- 	pattern = "*",
+-- 	callback = function()
+-- 		vim.cmd("SessionSave")
+-- 	end,
+-- })
