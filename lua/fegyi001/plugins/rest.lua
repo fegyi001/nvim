@@ -1,5 +1,6 @@
 return {
 	"rest-nvim/rest.nvim",
+	enabled = false,
 	dependencies = {
 		"rest-nvim/tree-sitter-http",
 	},
