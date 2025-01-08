@@ -7,7 +7,7 @@ return {
 			"nvim-telescope/telescope-fzf-native.nvim",
 			build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
 		},
-		"nvim-tree/nvim-web-devicons",
+		"DaikyXendo/nvim-material-icon",
 		"folke/todo-comments.nvim",
 		"xiyaowong/telescope-emoji.nvim",
 	},

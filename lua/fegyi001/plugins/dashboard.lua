@@ -2,7 +2,7 @@ return {
 	"nvimdev/dashboard-nvim",
 	event = "VimEnter",
 	dependencies = {
-		{ "nvim-tree/nvim-web-devicons" },
+		{ "DaikyXendo/nvim-material-icon" },
 	},
 	config = function()
 		require("dashboard").setup({

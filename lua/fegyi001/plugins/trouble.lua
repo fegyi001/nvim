@@ -2,7 +2,7 @@ return {
 	"folke/trouble.nvim",
 	cmd = "Trouble",
 	opts = {},
-	dependencies = { "nvim-tree/nvim-web-devicons", "folke/todo-comments.nvim" },
+	dependencies = { "DaikyXendo/nvim-material-icon", "folke/todo-comments.nvim" },
 	keys = {
 		{
 			"<leader>xx",
