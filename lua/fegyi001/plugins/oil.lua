@@ -2,6 +2,7 @@ return {
 	{
 		"stevearc/oil.nvim",
 		dependencies = { "DaikyXendo/nvim-material-icon" },
+		event = "VeryLazy",
 		config = function()
 			require("oil").setup({
 				default_file_explorer = true,

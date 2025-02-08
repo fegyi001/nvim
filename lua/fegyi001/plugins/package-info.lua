@@ -1,6 +1,7 @@
 return {
 	{
 		"vuki656/package-info.nvim",
+		event = "VeryLazy",
 		ft = "json",
 		dependencies = { "MunifTanjim/nui.nvim" },
 		config = function()

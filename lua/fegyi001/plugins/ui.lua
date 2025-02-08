@@ -1,6 +1,7 @@
 return {
 	{
 		"lukas-reineke/virt-column.nvim",
+		event = "VeryLazy",
 		opts = {
 			char = { "┆" },
 			virtcolumn = "80",
@@ -9,6 +10,7 @@ return {
 	},
 	{
 		"j-hui/fidget.nvim",
+		event = "VeryLazy",
 		opts = {
 			notification = {
 				window = {

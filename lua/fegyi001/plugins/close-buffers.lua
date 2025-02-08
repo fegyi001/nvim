@@ -1,5 +1,6 @@
 return {
 	"kazhala/close-buffers.nvim",
+	event = "VeryLazy",
 	config = function()
 		local keymap = vim.keymap -- for conciseness
 		keymap.set(

@@ -1,5 +1,6 @@
 return {
 	"github/copilot.vim",
+	event = "VeryLazy",
 	config = function()
 		-- vim.keymap.set("i", "<Right>", 'copilot#Accept("\\<CR>") . "\\<Esc>"', {
 		vim.keymap.set("i", "<Right>", 'copilot#Accept("\\<CR>")', {

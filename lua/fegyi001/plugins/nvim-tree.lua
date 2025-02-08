@@ -1,5 +1,6 @@
 return {
 	"nvim-tree/nvim-tree.lua",
+	event = "VeryLazy",
 	dependencies = "DaikyXendo/nvim-material-icon",
 	config = function()
 		local nvimtree = require("nvim-tree")

@@ -1,5 +1,6 @@
 return {
 	"nvim-lualine/lualine.nvim",
+	event = "VeryLazy",
 	dependencies = { "DaikyXendo/nvim-material-icon" },
 	config = function()
 		local lualine = require("lualine")

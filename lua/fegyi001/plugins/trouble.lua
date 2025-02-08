@@ -1,5 +1,6 @@
 return {
 	"folke/trouble.nvim",
+	event = "VeryLazy",
 	cmd = "Trouble",
 	opts = {},
 	dependencies = { "DaikyXendo/nvim-material-icon", "folke/todo-comments.nvim" },

@@ -1,8 +1,8 @@
 return {
 	{
 		"mrcjkb/rustaceanvim",
+		event = "VeryLazy",
 		version = "^5",
-		lazy = false,
 		config = function()
 			local mason_registry = require("mason-registry")
 			local codelldb = mason_registry.get_package("codelldb")
@@ -19,6 +19,7 @@ return {
 	},
 	{
 		"saecki/crates.nvim",
+		event = "VeryLazy",
 		ft = { "toml" },
 		config = function()
 			require("crates").setup({
