@@ -1,11 +1,10 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	event = "VeryLazy",
+	event = { "BufReadPre", "BufNewFile" },
 	dependencies = { "DaikyXendo/nvim-material-icon" },
 	config = function()
 		local lualine = require("lualine")
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
-
 		-- configure lualine with modified theme
 		lualine.setup({
 			sections = {
