@@ -10,7 +10,7 @@ return {
 		local lspconfig = require("lspconfig")
 		local mason_lspconfig = require("mason-lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
-		local keymap = vim.keymap -- for conciseness
+		local keymap = vim.keymap
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)
@@ -44,12 +44,9 @@ return {
 			end,
 		})
 
-		-- used to enable autocompletion (assign to every lsp server config)
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 		local util = require("lspconfig/util")
 
-		-- Change the Diagnostic symbols in the sign column (gutter)
-		-- (not in youtube nvim video)
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 		for type, icon in pairs(signs) do
 			local hl = "DiagnosticSign" .. type
@@ -57,10 +54,17 @@ return {
 		end
 
 		mason_lspconfig.setup_handlers({
-			-- default handler for installed servers
 			function(server_name)
 				lspconfig[server_name].setup({
 					capabilities = capabilities,
+				})
+			end,
+			["angularls"] = function()
+				lspconfig["angularls"].setup({
+					root_dir = function(fname)
+						return util.root_pattern("nx.json", "angular.json")(fname) or vim.loop.cwd()
+					end,
+					filetypes = { "typescript", "html", "htmlangular" },
 				})
 			end,
 			["ts_ls"] = function()
@@ -94,19 +98,16 @@ return {
 				})
 			end,
 			["emmet_ls"] = function()
-				-- configure emmet language server
 				lspconfig["emmet_ls"].setup({
 					capabilities = capabilities,
 					filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
 				})
 			end,
 			["lua_ls"] = function()
-				-- configure lua server (with special settings)
 				lspconfig["lua_ls"].setup({
 					capabilities = capabilities,
 					settings = {
 						Lua = {
-							-- make the language server recognize "vim" global
 							diagnostics = {
 								globals = { "vim" },
 							},
