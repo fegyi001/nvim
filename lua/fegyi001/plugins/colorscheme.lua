@@ -9,6 +9,7 @@ return {
 	},
 	{
 		"loctvl842/monokai-pro.nvim",
+		event = "VimEnter",
 		priority = 1000,
 		config = function()
 			vim.cmd("colorscheme monokai-pro")
