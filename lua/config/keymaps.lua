@@ -47,7 +47,6 @@ keymap.set("n", "<leader>bw", "<cmd>bufdo bwipeout<cr>", { desc = "Close all buf
 keymap.set("x", "<leader>p", '"_dP')
 
 -- Other stuff
-keymap.set("n", "<space><space>", "<nop>", {})
 keymap.set("n", "'", ":", { nowait = true, desc = "Command mode" })
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
