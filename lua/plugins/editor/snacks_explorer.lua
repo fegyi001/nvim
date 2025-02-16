@@ -2,6 +2,9 @@ return {
   desc = "Snacks File Explorer",
   recommended = true,
   "folke/snacks.nvim",
+  dependencies = {
+    "DaikyXendo/nvim-material-icon",
+  },
   opts = { explorer = {} },
   keys = {
     {
