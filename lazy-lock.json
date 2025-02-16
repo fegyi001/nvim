@@ -1,4 +1,5 @@
 {
+  "CopilotChat.nvim": { "branch": "main", "commit": "7e6583c75f1231ea1eac70e06995dd3f97a58478" },
   "LazyVim": { "branch": "main", "commit": "3f034d0a7f58031123300309f2efd3bb0356ee21" },
   "SchemaStore.nvim": { "branch": "main", "commit": "97b08f928d355bd6d5dee595fdf667b5bfb6329f" },
   "better-escape.nvim": { "branch": "master", "commit": "199dcc2643dec5d8dbdab4ec672cf405224dcb3b" },
