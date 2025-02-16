@@ -1,7 +1,7 @@
 -- Import the snacks module
 local snacks = require("snacks")
 local material_icons = require("nvim-web-devicons")
--- Store the original snacks.util.icon function
+
 local original_snacks_icon = snacks.util.icon
 
 -- Override the snacks.util.icon function
