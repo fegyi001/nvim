@@ -24,6 +24,20 @@ return {
             return vim.loop.cwd()
           end,
         },
+        vtsls = {
+          filetypes = {
+            "javascript",
+            "javascriptreact",
+            "javascript.jsx",
+            "typescript",
+            "typescriptreact",
+            "typescript.tsx",
+          },
+          root_dir = function(fname)
+            local root_pattern = require("lspconfig.util").root_pattern("package.json")
+            return root_pattern(fname) or vim.loop.cwd()
+          end,
+        },
       },
     },
   },
