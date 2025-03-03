@@ -12,7 +12,7 @@ vim.g.snacks_animate = false
 -- Can be one of: telescope, fzf
 -- Leave it to "auto" to automatically use the picker
 -- enabled with `:LazyExtras`
-vim.g.lazyvim_picker = "auto"
+vim.g.lazyvim_picker = "fzf"
 
 -- LazyVim completion engine to use.
 -- Can be one of: nvim-cmp, blink.cmp
