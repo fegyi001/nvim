@@ -122,3 +122,9 @@ end
 
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
+
+-- Other stuff
+vim.lsp.set_log_level("off")
+vim.opt.syntax = "off"
+vim.opt.foldenable = false
+vim.o.spell = false

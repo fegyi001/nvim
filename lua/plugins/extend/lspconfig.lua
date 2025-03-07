@@ -24,7 +24,11 @@ return {
             return vim.loop.cwd()
           end,
         },
+        tailwindcss = {
+          enabled = false,
+        },
         vtsls = {
+          enabled = false,
           filetypes = {
             "javascript",
             "javascriptreact",
