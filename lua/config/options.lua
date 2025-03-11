@@ -4,6 +4,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
+vim.g.autoformat = false
+
 -- Snacks animations
 -- Set to `false` to globally disable all snacks animations
 vim.g.snacks_animate = false

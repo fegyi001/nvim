@@ -27,6 +27,17 @@ return {
         tailwindcss = {
           enabled = false,
         },
+        tsserver = {
+          enabled = false,
+        },
+        eslint = {
+          on_attach = function(client, bufnr)
+            vim.api.nvim_create_autocmd("BufWritePre", {
+              buffer = bufnr,
+              command = "EslintFixAll",
+            })
+          end,
+        },
         vtsls = {
           enabled = false,
           filetypes = {
