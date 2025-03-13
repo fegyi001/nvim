@@ -1,4 +1,15 @@
-local keymap = vim.keymap -- for conciseness
+local keymap = vim.keymap
+
+-- Instead of mapping <C-s> to :w<CR>, use a function to save the buffer.
+-- Because otherwise a popup will be shown when saving and it is annoying.
+local function save_buffer()
+  local buftype = vim.bo.buftype
+  if buftype == "" then
+    vim.cmd("write")
+  else
+    print("Cannot write: buffer type is '" .. buftype .. "'")
+  end
+end
 
 -- Exit insert mode with jk or JK
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
@@ -12,6 +23,7 @@ keymap.set("i", "<C-k>", "<Up>")
 keymap.set("i", "<C-e>", "<End>")
 
 -- Save with Ctrl-s
+-- keymap.set("n", "<C-s>", save_buffer, { desc = "Save" })
 keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save" })
 
 -- greatest keymap ever
