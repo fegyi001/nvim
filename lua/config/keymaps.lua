@@ -23,7 +23,6 @@ keymap.set("i", "<C-k>", "<Up>")
 keymap.set("i", "<C-e>", "<End>")
 
 -- Save with Ctrl-s
--- keymap.set("n", "<C-s>", save_buffer, { desc = "Save" })
 keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save" })
 
 -- greatest keymap ever
