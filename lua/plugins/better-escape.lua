@@ -1,8 +1,9 @@
 return {
   "max397574/better-escape.nvim",
+  event = "VeryLazy",
   config = function()
     require("better_escape").setup({
-      timeout = 100,
+      timeout = 80,
       default_mappings = true,
       mappings = {
         i = {
