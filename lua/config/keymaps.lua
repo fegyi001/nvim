@@ -1,8 +1,5 @@
 local keymap = vim.keymap
 
--- keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
--- keymap.set("i", "JK", "<ESC>", { desc = "Exit insert mode with JK" })
-
 -- Move around with Ctrl-h, Ctrl-j, Ctrl-k, Ctrl-l in insert mode
 keymap.set("i", "<C-h>", "<Left>")
 keymap.set("i", "<C-l>", "<Right>")
