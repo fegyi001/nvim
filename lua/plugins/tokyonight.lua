@@ -10,7 +10,9 @@ return {
       comments = { italic = true },
       keywords = { italic = true },
       functions = { italic = true },
-      variables = { italic = true },
+      variables = {},
+      sidebars = "dark",
+      floats = "dark",
     },
   },
 }

@@ -1,5 +1,6 @@
 return {
   "chrisgrieser/nvim-spider",
+  event = "VeryLazy",
   opts = {},
   enabled = false,
   config = function()
