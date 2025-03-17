@@ -7,4 +7,8 @@ return {
     "catppuccin/nvim",
     enabled = false,
   },
+  {
+    "nvim-neotest/neotest",
+    enabled = false,
+  },
 }
