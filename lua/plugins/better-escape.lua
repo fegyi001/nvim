@@ -3,7 +3,7 @@ return {
   event = "VeryLazy",
   config = function()
     require("better_escape").setup({
-      timeout = 80,
+      timeout = 100,
       default_mappings = true,
       mappings = {
         i = {
