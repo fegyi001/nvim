@@ -16,7 +16,7 @@ keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save" })
 keymap.set("x", "<leader>P", '"_dP')
 
 -- Other stuff
-keymap.set("n", "<C-d>", "<C-d>zz")
-keymap.set("n", "<C-u>", "<C-u>zz")
-keymap.set("n", "n", "nzzzv")
-keymap.set("n", "N", "Nzzzv")
+-- keymap.set("n", "<C-d>", "<C-d>zz")
+-- keymap.set("n", "<C-u>", "<C-u>zz")
+-- keymap.set("n", "n", "nzzzv")
+-- keymap.set("n", "N", "Nzzzv")

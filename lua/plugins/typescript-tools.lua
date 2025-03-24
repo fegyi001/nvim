@@ -7,7 +7,7 @@ return {
   opts = {
     settings = {
       code_lens = "off",
-      complete_function_calls = true,
+      complete_function_calls = false,
       include_completions_with_insert_text = true,
       separate_diagnostic_server = true,
       publish_diagnostic_on = "insert_leave",
@@ -15,7 +15,7 @@ return {
       tsserver_max_memory = 20000,
       tsserver_format_options = {},
       tsserver_file_preferences = {
-        completions = { completeFunctionCalls = true },
+        completions = { completeFunctionCalls = false },
         init_options = { preferences = { disableSuggestions = true } },
         importModuleSpecifierPreference = "project-relative",
         jsxAttributeCompletionStyle = "braces",
