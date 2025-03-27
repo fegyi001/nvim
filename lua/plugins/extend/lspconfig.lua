@@ -54,9 +54,6 @@ return {
             "typescript.tsx",
           },
           root_dir = function(fname)
-            print(find_root(fname))
-            -- local root_pattern = require("lspconfig.util").root_pattern("package.json")
-            -- return root_pattern(fname) or vim.loop.cwd()
             return find_root(fname)
           end,
         },
