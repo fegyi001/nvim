@@ -16,7 +16,12 @@ keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save" })
 keymap.set("x", "<leader>P", '"_dP')
 
 -- Other stuff
--- keymap.set("n", "<C-d>", "<C-d>zz")
--- keymap.set("n", "<C-u>", "<C-u>zz")
--- keymap.set("n", "n", "nzzzv")
--- keymap.set("n", "N", "Nzzzv")
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
+
+keymap.set("n", "<leader>ff", LazyVim.pick("files", { root = false }), { desc = "Find Files" })
+keymap.set("n", "<leader><space>", LazyVim.pick("files", { root = false }), { desc = "Find Files" })
+keymap.set("n", "<leader>fF", LazyVim.pick("files"), { desc = "Find Files (cwd)" })
+keymap.set("n", "<leader>/", LazyVim.pick("grep", { root = false }), { desc = "Grep (Root Dir)" })

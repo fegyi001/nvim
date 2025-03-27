@@ -21,7 +21,7 @@ return {
         desc = "Harpoon Quick Menu",
       },
       {
-        "<leader>ha",
+        "<leader>H",
         function()
           require("harpoon"):list():add()
         end,

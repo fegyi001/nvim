@@ -1,9 +1,10 @@
 return {
   {
     "arnamak/stay-centered.nvim",
+    enabled = false,
     opts = function()
       require("stay-centered").setup({
-        allow_scroll_move = false,
+        allow_scroll_move = true,
         -- Add any configurations here, like skip_filetypes if needed
         -- skip_filetypes = {"lua", "typescript"},
       })
