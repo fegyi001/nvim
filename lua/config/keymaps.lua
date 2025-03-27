@@ -25,3 +25,7 @@ keymap.set("n", "<leader>ff", LazyVim.pick("files", { root = false }), { desc = 
 keymap.set("n", "<leader><space>", LazyVim.pick("files", { root = false }), { desc = "Find Files" })
 keymap.set("n", "<leader>fF", LazyVim.pick("files"), { desc = "Find Files (cwd)" })
 keymap.set("n", "<leader>/", LazyVim.pick("grep", { root = false }), { desc = "Grep (Root Dir)" })
+keymap.set("n", "<leader>e", LazyVim.pick("explorer", { root = false }), { desc = "Explorer Snacks" })
+keymap.set("n", "<leader>fe", LazyVim.pick("explorer", { root = false }), { desc = "Explorer Snacks" })
+keymap.set("n", "<leader>E", LazyVim.pick("explorer"), { desc = "Explorer Snacks (cwd)" })
+keymap.set("n", "<leader>fE", LazyVim.pick("explorer"), { desc = "Explorer Snacks (cwd)" })
