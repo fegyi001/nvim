@@ -15,6 +15,13 @@ return {
       tsserver_max_memory = 20000,
       tsserver_format_options = {},
       tsserver_file_preferences = {
+        includeInlayParameterNameHints = "all",
+        includeInlayFunctionParameterTypeHints = true,
+        includeInlayVariableTypeHints = true,
+        includeInlayVariableTypeHintsWhenTypeMatchesName = true,
+        includeInlayPropertyDeclarationTypeHints = true,
+        includeInlayFunctionLikeReturnTypeHints = true,
+        includeInlayEnumMemberValueHints = true,
         completions = { completeFunctionCalls = false },
         init_options = { preferences = { disableSuggestions = true } },
         importModuleSpecifierPreference = "project-relative",
