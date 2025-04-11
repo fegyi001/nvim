@@ -24,6 +24,7 @@ return {
     opts = {
       servers = {
         angularls = {
+          cmd = { "angular-language-server", "--stdio" },
           filetypes = { "typescript", "html", "htmlangular" },
           root_dir = function(fname)
             return find_root(fname)
@@ -33,7 +34,8 @@ return {
           enabled = false,
         },
         tsserver = {
-          enabled = false,
+          cmd = { "typescript-language-server", "--stdio" },
+          -- enabled = false,
         },
         eslint = {
           on_attach = function(client, bufnr)
@@ -44,7 +46,8 @@ return {
           end,
         },
         vtsls = {
-          enabled = false,
+          cmd = { "typescript-language-server", "--stdio" },
+          -- enabled = false,
           filetypes = {
             "javascript",
             "javascriptreact",
