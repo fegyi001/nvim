@@ -22,6 +22,9 @@ return {
     "neovim/nvim-lspconfig",
     event = "VeryLazy",
     opts = {
+      inlay_hints = {
+        enabled = false,
+      },
       servers = {
         angularls = {
           cmd = { "angular-language-server", "--stdio" },
@@ -57,11 +60,11 @@ return {
           },
           init_options = {
             preferences = {
-              includeInlayParameterNameHints = "all",
-              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+              includeInlayParameterNameHints = "literals",
               includeInlayFunctionParameterTypeHints = true,
-              includeInlayVariableTypeHints = false,
               includeInlayPropertyDeclarationTypeHints = true,
+              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+              includeInlayVariableTypeHints = false,
               includeInlayFunctionLikeReturnTypeHints = false,
               includeInlayEnumMemberValueHints = false,
             },
