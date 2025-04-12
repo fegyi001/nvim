@@ -47,7 +47,6 @@ return {
         },
         vtsls = {
           cmd = { "typescript-language-server", "--stdio" },
-          -- enabled = false,
           filetypes = {
             "javascript",
             "javascriptreact",
@@ -55,6 +54,17 @@ return {
             "typescript",
             "typescriptreact",
             "typescript.tsx",
+          },
+          init_options = {
+            preferences = {
+              includeInlayParameterNameHints = "all",
+              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+              includeInlayFunctionParameterTypeHints = true,
+              includeInlayVariableTypeHints = false,
+              includeInlayPropertyDeclarationTypeHints = true,
+              includeInlayFunctionLikeReturnTypeHints = false,
+              includeInlayEnumMemberValueHints = false,
+            },
           },
           root_dir = function(fname)
             return find_root(fname)
