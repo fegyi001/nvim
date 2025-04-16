@@ -1,6 +1,7 @@
 return {
   {
     "stevearc/oil.nvim",
+    enabled = false,
     dependencies = { "DaikyXendo/nvim-material-icon" },
     event = "VeryLazy",
     config = function()
