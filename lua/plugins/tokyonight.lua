@@ -16,7 +16,7 @@ return {
     },
     on_colors = function(colors)
       colors.border = "#565f89"
-      colors.bg_float = "#2a2c44"
+      colors.bg_float = "#2b2f4c"
     end,
   },
 }
