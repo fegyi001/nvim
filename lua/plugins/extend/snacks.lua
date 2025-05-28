@@ -11,9 +11,6 @@ return {
 ██╔══╝  ██╔══╝  ██║   ██║ ╚██╔╝  ██║╚██╗ ██╔╝██║██║╚██╔╝██║
 ██║     ███████╗╚██████╔╝  ██║   ██║ ╚████╔╝ ██║██║ ╚═╝ ██║
 ╚═╝     ╚══════╝ ╚═════╝   ╚═╝   ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
-
-if brain were so simple we could understand it, 
-we would be so simple we couldn't
         ]],
         keys = {
           { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
