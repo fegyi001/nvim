@@ -7,6 +7,9 @@ keymap.set("i", "<C-j>", "<Down>")
 keymap.set("i", "<C-k>", "<Up>")
 keymap.set("i", "<C-e>", "<End>")
 
+-- Redo with Shift-U
+keymap.set("n", "<S-u>", "<C-r>", { desc = "Redo" })
+
 -- Save with Ctrl-s
 keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save" })
 
