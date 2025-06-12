@@ -10,8 +10,8 @@ return {
       nx_cmd_root = "npx nx",
     },
     keys = {
-      { "<leader>nxr", "<cmd>Telescope nx actions<CR>", desc = "nx actions" },
-      { "<leader>nxg", "<cmd>Telescope nx generators<CR>", desc = "nx generators" },
+      { "<leader>nxr", "<Cmd>Telescope nx actions<CR>", desc = "nx actions" },
+      { "<leader>nxg", "<Cmd>Telescope nx generators<CR>", desc = "nx generators" },
     },
   },
 }

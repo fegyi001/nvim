@@ -4,32 +4,32 @@ return {
   keys = {
     {
       "<leader>hb",
-      "<cmd>Gitsigns blame_line<cr>",
+      "<Cmd>Gitsigns blame_line<CR>",
       desc = "Blame Line",
     },
     {
       "<leader>hs",
-      "<cmd>Gitsigns stage_hunk<cr>",
+      "<Cmd>Gitsigns stage_hunk<CR>",
       desc = "Stage Hunk",
     },
     {
       "<leader>hS",
-      "<cmd>Gitsigns stage_buffer<cr>",
+      "<Cmd>Gitsigns stage_buffer<CR>",
       desc = "Stage Buffer",
     },
     {
       "<leader>hr",
-      "<cmd>Gitsigns reset_hunk<cr>",
+      "<Cmd>Gitsigns reset_hunk<CR>",
       desc = "Reset Hunk",
     },
     {
       "<leader>hR",
-      "<cmd>Gitsigns reset_buffer<cr>",
+      "<Cmd>Gitsigns reset_buffer<CR>",
       desc = "Reset Buffer",
     },
     {
       "<leader>hu",
-      "<cmd>Gitsigns undo_stage_hunk<cr>",
+      "<Cmd>Gitsigns undo_stage_hunk<CR>",
       desc = "Undo Stage Hunk",
     },
   },

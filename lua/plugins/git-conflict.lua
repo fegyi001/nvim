@@ -14,12 +14,12 @@ return {
   keys = {
     {
       "<leader>gx",
-      "<cmd>GitConflictListQf<cr>",
+      "<Cmd>GitConflictListQf<CR>",
       desc = "List Conflicts",
     },
     {
       "<leader>gr",
-      "<cmd>GitConflictRefresh<cr>",
+      "<Cmd>GitConflictRefresh<CR>",
       desc = "Refresh Conflicts",
     },
   },
