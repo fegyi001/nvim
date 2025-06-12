@@ -8,15 +8,15 @@ keymap.set("i", "<C-k>", "<Up>")
 keymap.set("i", "<C-e>", "<End>")
 
 -- Redo with Shift-U
-keymap.set("n", "<S-u>", "<C-r>", { desc = "Redo" })
+keymap.set("n", "<S-u>", "<C-r>", { desc = "Redo", noremap = true, silent = true })
 
 -- Save with Ctrl-s
-keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save" })
+keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save", noremap = true, silent = true })
 
 -- greatest keymap ever
 -- https://www.youtube.com/watch?v=qZO9A5F6BZs
 -- 6:26
-keymap.set("x", "<leader>P", '"_dP')
+keymap.set("x", "<leader>P", '"_dP', { desc = "Paste without replacing register", noremap = true, silent = true })
 
 -- Other stuff
 keymap.set("n", "<C-d>", "<C-d>zz")
